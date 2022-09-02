@@ -1,0 +1,7 @@
+{
+  "name": "cripto-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
