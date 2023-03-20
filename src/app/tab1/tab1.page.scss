@@ -1,0 +1,77 @@
+
+.searchbar-input {
+    background: #303B62 !important;
+    color: #fff !important;
+    margin-top: 30px;
+}
+.searchbar-input::placeholder {
+    color: #d11414;
+    background: #fff;
+}
+
+.screen {
+    background: #303B62 !important;
+    color:#fff;
+}
+
+ion-item {
+    background: #303B62 !important;
+    display: inline;
+}
+ion-item {
+    --ion-item-background: #303B62;
+  }
+
+.card-list { 
+    
+    background: #455388;
+    color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    &:hover {
+        background: red;
+       
+        
+      }
+}
+
+.icon {
+    position: absolute;
+    bottom: 25%;
+    left: 28px;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    // overflow: hidden;
+    margin-right: 20px;
+}
+
+.name-and-price {
+    position: absolute;
+    left: 60px;
+    bottom: 20%;
+
+    //background: #c1c0c1;
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto-title, .crypto-price {
+    color: #fff;
+    //background: #303B62 !important;
+}
+
+.crypto-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.crypto-price {
+    font-size: 12px;
+    font-weight: 500;
+}

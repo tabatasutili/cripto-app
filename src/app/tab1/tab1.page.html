@@ -1,17 +1,21 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true" >
+<ion-searchbar mode="ios" class="searchbar-input"></ion-searchbar>
+<div class="btnLeft" class="card-list" *ngFor="let item of coins.result" (click)="setCoin(item.name, item)" tappable>
+  <ion-img class="icon" [src]="item.idIcon"></ion-img>
+  <div class="name-and-price">
+    <ion-label class="crypto-title">{{ item.name }}</ion-label>
+    <ion-label class="crypto-price"> US$ {{ item.volume1hrsUsd }},00</ion-label>
+  </div>
+</div>
+  <!-- <ion-list class="screen">
+    <ion-item class="screen" *ngFor="let item of coins.coins">
+      <div class="card-list">
+        <img class="icon" src="https://www.bussoladoinvestidor.com.br/wp-content/uploads/2015/04/bitcoin20.png"/>
+        <div class="name+price">
+          <ion-label class="screen" class="crypto-title">"aa"</ion-label>
+          <ion-label class="screen" class="crypto-price">"aa"</ion-label>
+        </div>
+      </div>
+    </ion-item>
+  </ion-list> -->
 </ion-content>

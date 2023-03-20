@@ -1,17 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      salvos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
-</ion-content>
+<ion-content [fullscreen]="true" >
+  <div class="btnLeft" class="card-list" *ngFor="let item of coins.result" (click)="removeSavedCoin(item.name)" tappable>
+    <ion-img class="icon" [src]="item.idIcon"></ion-img>
+    <div class="name-and-price">
+      <ion-label class="crypto-title">{{ item.name }}</ion-label>
+      <ion-label class="crypto-price"> US$ {{ item.volume1hrsUsd }},00</ion-label>
+    </div>
+  </div>
